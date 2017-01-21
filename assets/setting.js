@@ -1,4 +1,4 @@
- var URL = "/aware"; //-- EDIT here 
+ var sURL = "/aware"; //-- EDIT here 
 //var sURL = ""; //-- EDIT here 
 
 var colors = [
