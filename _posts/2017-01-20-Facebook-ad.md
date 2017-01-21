@@ -1,9 +1,9 @@
 ---
-title:      "Jekyll deployment on VPS server big title"
+title:      "Quảng cáo trả tiền bằng Facebook Ads Manager"
 description:   "Quảng cáo truyền thống có còn lợi thế so với marketing online?"
 date:       2016-11-17
 author:     "Vu, Nguyen"
-header-img: "https://stratablue.com/images/2015/01/facebooks-new-feature-knows-what-song-or-tv-show-is-playing-in-the-background-1.jpg"    
+header-img: "http://www.pixelstalk.net/wp-content/uploads/2016/06/Download-Facebook-Wallpaper-Free.jpg"    
 keyword :   "Quang cao facebook"                 
 long-keyword: "quang cao facebook"        
 target-site: "http://digitalife.top"    
@@ -17,7 +17,7 @@ Công cụ quảng cáo Facebook đã trở nên mạnh mẽ hơn bao giờ hế
 <!-- END  POST_EXCERPT -->
 
 
-## Deploy Jekyll site on VPS
+## Facebook Ads Manager UI
 
 ## Create folder      
 
