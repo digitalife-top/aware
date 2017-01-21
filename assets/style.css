@@ -3,7 +3,7 @@ a.post-link{text-decoration:none;color:#333;}
 a.post-link:hover{text-decoration:none;color:#000;font-weight:bold;}
 footer a, .foot a{text-decoration:none;color:#039be5;}
 footer a:hover, .foot a:hover{text-decoration:none;font-weight:bold;}
-
+pre {background: #eeeeee;}
 img.logo{margin-top:0px;margin-left:5px;height:80px;}
 .logo-text{font-size:80%;font-family:'Kanit'}
 .font-pattaya{font-family:'Pattaya'}
