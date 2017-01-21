@@ -1,5 +1,5 @@
-// var URL = "/business"; //-- EDIT here 
-var sURL = ""; //-- EDIT here 
+ var URL = "/aware"; //-- EDIT here 
+//var sURL = ""; //-- EDIT here 
 
 var colors = [
     "red","blue","green","orange",  
