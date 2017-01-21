@@ -1,0 +1,52 @@
+<title>{{page.title }} | {{ site.title}}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+
+{% assign seo_url = site.domain | append: page.url %}
+
+<!--Open graph-->
+<meta property="og:title" content="{{page.title }} | {{ site.title }} ">
+<meta property="og:description" content="{{page.description }} | {{ site.description }}">
+<meta property="og:type" content="Website">
+<meta property="og:url" content="{{ seo_url }}">
+{% if site.og_image %}
+  <meta property="og:image" content="{{ '/assets/img/small/favicon.png' | prepend: site.domain }}">
+{% endif %}
+
+<link rel="canonical" href="{{ seo_url }} "> 
+
+<!--  Twitter card  -->
+{% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ seo_url }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="{{ '/assets/img/small/favicon.png' | prepend: site.domain }}">
+{% endif %}
+
+<!--  Facebook card -->
+{% if site.facebook_username %}
+  {% if site.facebook_app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook_app_id }}">
+    <meta property="fb:admins" content="{{ site.facebook_admins }}"/>
+  {% endif %}
+{% endif %}
+
+<!--  Prev, next   -->
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">
+{% endif %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
+{% endif %}
+
+<!--  Schema  -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": {{ seo_url | jsonify }},
+    "logo": {{ '/assets/img/small/favicon.png' | prepend: site.domain |  jsonify }}
+  }
+</script>
+
+

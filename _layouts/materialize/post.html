@@ -1,0 +1,138 @@
+---
+layout: materialize/default
+---
+
+<!-- ============= PARALLAX ============== -->
+<div class="parallax-container" style="height:380px;">
+    {% if page.header-img %}
+        <div class="parallax"><img src="{{ page.header-img }}" ALT="{{ page.keyword | default: site.keyword }}"></div>
+    {% else %}
+        <div class="parallax"><img src="{{ site.baseurl }}/assets/img/small/parallax.jpg" ALT="{{ page.keyword | default: site.keyword }}" ></div>
+    {% endif %}
+
+    <!-- text inside parallax -->
+    <div style="margin-top: 80px;"></div>
+    <div class="white-text container">
+      	<h1 class="lightSpeedIn"><b>{{ page.title }}</b></h1>
+      	<h5><i class="fa fa-quote-left"></i> {{ page.description }}</h5>
+        
+    </div>
+</div>
+
+<div class="container">
+
+  <section id="post-content">
+    <p style="font-size:90%">
+      {% if page.author %}
+        <i class="fa fa-user"></i> {{ page.author }} &nbsp;&nbsp;
+      {% else %}
+        {{ site.title }}
+      {% endif %} 
+        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%Y" }} &nbsp;&nbsp;
+        <i class="fa fa-clock-o"></i> {% include readtime.html %}
+    </p>
+    <!-- ======   TEXT EFFECT - DONT EDIT ====== -->
+    {% if page.keyword %}
+      <p class="textillate grey lighten-4" data-in-effect="bounceIn" data-out-effect="wobble">{{page.keyword}}</p>
+    {% endif %}
+
+    <article>
+      {{ content }}
+    </article>
+    
+    <!-- pager -->
+    <div id="paging"> 
+      <div>
+          {% if page.previous.url %}
+              <a class="btn btn-flat grey lighten-4" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous</a>
+          {% endif %}
+          		<a class="btn btn-flat grey lighten-3" href="{{ site.baseurl }}/blogs">Blog Home</a>
+          {% if page.next.url %}
+              <a class="btn btn-flat grey lighten-4" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next &rarr;</a>
+          {% endif %}
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Share -->
+  <div id="share">
+    <div class="card-panel grey lighten-5 row">
+    	<h3 class="main-color-text"><i class="fa fa-share-alt"></i> Share this on </h3>                  
+			{% include share.html %}
+    </div> <!-- card panel -->
+
+    <div>
+  <!-- tags -->
+      <p>
+        {% if post %}
+          {% assign tags = post.tags %}
+        {% else %}
+          {% assign tags = page.tags %}
+        {% endif %}
+        
+        <b>Tags: </b> 
+        {% for tag in tags %}
+          <a href="{{site.baseurl}}/tags/#{{tag|slugize}}"><i class="fa fa-tags"></i> {{tag}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+
+  <!-- categories -->
+        {% if post %}
+          {% assign categories = post.categories %}
+        {% else %}
+          {% assign categories = page.categories %}
+        {% endif %}
+        &nbsp;&nbsp;&nbsp;<b>Category:</b> 
+        {% for category in categories %}
+          <a href="{{site.baseurl}}/categories/#{{category|slugize}}"><i class="fa fa-folder-open"></i> {{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </p>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+  <div id="related">
+  <!-- related posts -->
+        
+      <!-- tag related --> 
+      <h3 class="main-color-text"><i class="fa fa-link"></i> Related posts</h3>
+        {% assign listed_posts_urls = page.url | split: ' ' %}
+        
+        <ul>
+        {% for item in tags %} <!-- set o tren -->
+          {% for mypost in site.tags[item] %}
+            {% if listed_posts_urls contains mypost.url %}
+            {% else %}
+              <li>
+                <i class="fa fa-folder-open"></i> 
+                <a class="post-link"  href="{{ site.baseurl }}{{ mypost.url }}">{{ mypost.title }}</a>
+              </li>
+              {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- comments -->
+  {% if site.comment_activate %}
+    <h3><i class="fa fa-comments"></i> Comments</h3>
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <div id="comments"></div>
+    <script>
+      gapi.comments.render('comments', {
+          href: window.location,
+          width: '624',
+          first_party_property: 'BLOGGER',
+          view_type: 'FILTERED_POSTMOD'
+      });
+    </script>
+  {% endif %}
+
+</div>
+
