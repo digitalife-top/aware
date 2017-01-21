@@ -30,8 +30,9 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 </pre>
 
 ## Copy source to that folder 
-
-    cp -r /path-to/src /opt/www/domain.top/des 
+<pre><code>
+cp -r /path-to/src /opt/www/domain.top/des 
+</code></pre>
 
 ### Edit config._yml  
     -- Edit as following: 
