@@ -31,7 +31,7 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 
     cp -r /path-to/src /opt/www/domain.top/des 
 
-### Edit config._yml 
+### Edit config._yml  
     -- Edit as following: 
     url: domain.top
     baseurl: "" # empty
