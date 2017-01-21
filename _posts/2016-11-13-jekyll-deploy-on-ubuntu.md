@@ -22,8 +22,10 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 
 ## Create folder      
 
+<pre><code>
     /opt/www/domain.top/www
     /opt/www/domain.top/sub
+</code></pre>
 
 ## Copy source to that folder 
 
