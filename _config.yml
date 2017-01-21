@@ -1,9 +1,9 @@
 
 #---------- Site settings ------------
 title: BestWebdesign
-domain: "http://blog.bestwebdesign.top"   	# dung thay cho site.url
-url: "http://blog.bestwebdesign.top"   		# bi localhost default do khong chay duoc ENV jekyll build
-baseurl: ""                       
+domain: "https://digitalife-top.github.io/aware/"   	# dung thay cho site.url
+url: "https://digitalife-top.github.io"   		# bi localhost default do khong chay duoc ENV jekyll build
+baseurl: "aware"                       
 description: "Just Email-us to own a landing page in 24hrs. You will get this on the next day."
 excerpt_separator: <!--more-->
 
