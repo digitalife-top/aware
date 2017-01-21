@@ -21,12 +21,10 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 ## Deploy Jekyll site on VPS
 
 ## Create folder      
-
 <pre><code>
     /opt/www/domain.top/www
     /opt/www/domain.top/sub
 </code></pre>
-
 ## Copy source to that folder 
 
     cp -r /path-to/src /opt/www/domain.top/des 
