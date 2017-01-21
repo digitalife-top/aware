@@ -22,7 +22,7 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 
 ## Create folder      
 
-<pre class="grey lighten-4">
+<pre>
 <code>
     /opt/www/domain.top/www
     /opt/www/domain.top/sub
@@ -32,7 +32,7 @@ plaug We have to plaug We have to plaug We have to plaug We have to plaug
 ## Copy source to that folder 
 <pre>
 <code>
-cp -r /path-to/src /opt/www/domain.top/des 
+    cp -r /path-to/src /opt/www/domain.top/des 
 </code>
 </pre>
 
