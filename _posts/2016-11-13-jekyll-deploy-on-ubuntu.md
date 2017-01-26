@@ -3,7 +3,7 @@ title:      "Jekyll deployment on VPS server big title"
 description:   "Quảng cáo truyền thống có còn lợi thế so với marketing online?"
 date:       2016-11-17
 author:     "Vu, Nguyen"
-header-img: "https://assets.entrepreneur.com/content/3x2/274/20161108193331-GettyImages-594918166.jpeg"    
+header-img: "http://media.gettyimages.com/videos/cloud-computing-loop-video-id163172369?s=640x640"    
 keyword :   "tiêu đề bài viết seo"                 
 long-keyword: "marketing online bằng tiêu đề bài viết seo"        
 target-site: "http://digitalife.top"    
