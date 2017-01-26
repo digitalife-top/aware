@@ -3,7 +3,7 @@ title:      "Quảng cáo trả tiền bằng Facebook Ads Manager"
 description:   "Quảng cáo truyền thống có còn lợi thế so với marketing online?"
 date:       2017-01-20
 author:     "Vu, Nguyen"
-header-img: "http://www.pixelstalk.net/wp-content/uploads/2016/06/Download-Facebook-Wallpaper-Free.jpg"    
+header-img: "http://www.socialmediaexaminer.com/wp-content/uploads/2015/06/lk-ads-manager-app-placeit.jpg"    
 keyword :   "Quang cao facebook"                 
 long-keyword: "quang cao facebook"        
 target-site: "http://digitalife.top"    
