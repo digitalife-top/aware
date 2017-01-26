@@ -1,19 +1,18 @@
 ---
 title:      "Hiểu rõ về Auto Marketing và CRM"
 description:   "Quảng cáo truyền thống có còn lợi thế so với marketing online?"
-date:       2017-01-20
+date:       2017-01-21
 author:     "Vu, Nguyen"
-header-img: "https://tctechcrunch2011.files.wordpress.com/2013/10/facebook-app.jpg?w=738"    
+header-img: "https://www.mautic.org/wp-content/uploads/2015/07/bridge-192986_1280-720x340.jpg"    
 keyword :   "Quang cao facebook"                 
 long-keyword: "quang cao facebook"        
 target-site: "http://digitalife.top"    
-category: "Paid Ads"
-tags: ["Tiêu đề bài viết seo"]
+category: "Digital Marketing"
+tags: ["Digital marketing"]
 ---
 
 <!-- BEGIN POST_EXCERPT: mo ta ngan ve noi dung bai viet -->
-Công cụ quảng cáo Facebook đã trở nên mạnh mẽ hơn bao giờ hết
-<!--more-->
+If you’re in the marketing sector you’re probably very familiar with the term and concept of marketing automation. You may have even looked at various solutions you could use to try and get started with marketing automation. But many have probably never heard of marketing automation and that’s certainly okay.<!--more-->
 <!-- END  POST_EXCERPT -->
 
 - [MARKETER BLOG](https://www.mautic.org/category/blog/marketer/)
